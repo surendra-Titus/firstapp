@@ -1,33 +1,115 @@
-.App {
+body{
+  background: #282c34;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.App-logo{
+  display: inline-block;
+  margin-top: auto;
+  margin-left: 20px;
+}
+.inputTodo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.inputTodo{
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+.list{
+  display: inline-block;
+  color: #ffffff;
+}
+.container{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todos-list{
+  margin: 1rem;
+  padding: 1rem 1rem;
+  text-align: center;
 }
+.btn-add, .btn-del{
+  background: #a2d9ff;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #67abd8, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 56;
+  -moz-border-radius: 56;
+  border-radius: 56px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 1px 1px 7px #666666;
+  -moz-box-shadow: 1px 1px 7px #666666;
+  box-shadow: 1px 1px 7px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn-add, .btn-del:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.footerWave{
+  position: fixed;
+  bottom: 0;
 
+}
+.list{
+  list-style-type: none;
+}
+/* .checkbox{
+  appearance: none;
+  width: 90px;
+  height: 40px;
+  background-color: #bfbfbf;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox::before{
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  top:3px;
+  left: 3px;
+  border-radius: 50px;
+  transition: .3s;
+}
+.checkbox:checked::before{
+  transform: translate(50px);
+}
+.checkbox:checked{
+  background-color: #2980b9;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
